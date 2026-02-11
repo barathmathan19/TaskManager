@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Task Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Task Manager</h1>
+
+<div class="input-area">
+  <input id="taskInput" placeholder="Task name">
+
+  <input type="date" id="taskDate">
+
+  <input type="time" id="startTime">
+
+  <input type="time" id="endTime">
+
+  <button onclick="addTask()">Add</button>
+</div>
+
+<div class="filters">
+  <button onclick="showAll()">All</button>
+  <button onclick="showCompleted()">Completed</button>
+  <button onclick="showPending()">Pending</button>
+</div>
+
+<ul id="taskList"></ul>
+
+<button class="save" onclick="saveTasks()">Save All</button>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
